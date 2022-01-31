@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/utils/routes.dart';
 import 'pages/home_page.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,17 +19,19 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
+      // top devloping banner will be remove on false
+      debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
 
       // open home page by on app start at first
-      // initialRoute: "/home",
+      initialRoute: MyRoutes.loginRoute,
 
       routes: {
         "/": (context) => const LoginPage(),
-        "/home": (context) => const HomePage(),
-        "/login": (context) => const LoginPage(),
+        MyRoutes.HomeRoute: (context) => const HomePage(),
+        MyRoutes.loginRoute: (context) => const LoginPage(),
       },
     );
   }
