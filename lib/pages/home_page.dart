@@ -4,6 +4,8 @@ class HomePage extends StatelessWidget {
   final int days = 10;
   final String name = "tej";
 
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
