@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // open home page by on app start at first
-      initialRoute: MyRoutes.loginRoute,
+      initialRoute: MyRoutes.HomeRoute,
 
       routes: {
         "/": (context) => const LoginPage(),
