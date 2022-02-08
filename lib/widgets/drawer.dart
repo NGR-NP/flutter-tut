@@ -8,7 +8,7 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Colors.white,
+        color: Colors.transparent,
         child: ListView(
           padding: EdgeInsets.zero,
           children: const [
@@ -32,8 +32,8 @@ class MyDrawer extends StatelessWidget {
                 "Home",
                 textScaleFactor: 1.2,
                 style: TextStyle(
-                  color: Colors.black,
-                ),
+                    // color: Colors.black,
+                    ),
               ),
             ),
             ListTile(
@@ -45,21 +45,18 @@ class MyDrawer extends StatelessWidget {
                 "Profile",
                 textScaleFactor: 1.2,
                 style: TextStyle(
-                  color: Colors.black,
-                ),
+                    // color: Colors.black,
+                    ),
               ),
             ),
             ListTile(
-              leading: Icon(
-                CupertinoIcons.mail,
-                color: Colors.green,
-              ),
+              leading: Icon(CupertinoIcons.mail, color: Colors.green),
               title: Text(
                 "E-Mail",
                 textScaleFactor: 1.2,
                 style: TextStyle(
-                  color: Colors.black,
-                ),
+                    // color: Colors.black,
+                    ),
               ),
             ),
           ],

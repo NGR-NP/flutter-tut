@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: const Text("NGR App")),
       body: Center(
         child: Center(
-          child: Text("welcome to $days days of flutte $name"),
+          child: Text("welcome to $days day of flutte $name"),
         ),
       ),
       drawer: const MyDrawer(),
