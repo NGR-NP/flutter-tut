@@ -15,6 +15,8 @@ class MyTheme {
       ));
   static ThemeData darkTheme(BuildContext context) => ThemeData(
       brightness: Brightness.dark,
+      primarySwatch: Colors.green,
+      fontFamily: GoogleFonts.lato().fontFamily,
       appBarTheme: AppBarTheme(
         color: Colors.green,
         elevation: 3.0,

@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
               textAlign: TextAlign.center,
               style: const TextStyle(
                 fontSize: 28,
-                color: Colors.black,
+                // color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),
