@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "samsung mobile",
+            "desc": "samsung desc",
+            "price": 999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Linux mobile",
+            "desc": "Linux desc",
+            "price": 1999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Huwai mobile",
+            "desc": "Huwai desc",
+            "price": 2999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Nokia mobile",
+            "desc": "Nokia desc",
+            "price": 3999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Motorola mobile",
+            "desc": "Motorola desc",
+            "price": 4999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 6,
+            "name": "pixal mobile",
+            "desc": "pixal desc",
+            "price": 5999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 7,
+            "name": "lava mobile",
+            "desc": "lava desc",
+            "price": 6999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 8,
+            "name": "MI mobile",
+            "desc": "MI desc",
+            "price": 7999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Vivo mobile",
+            "desc": "Vivo desc",
+            "price": 8999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        },
+        {
+            "id": 10,
+            "name": "iPhone mobile",
+            "desc": "Apple desc",
+            "price": 9999,
+            "color": "#000",
+            "image": "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"
+        }
+    ]
+}
