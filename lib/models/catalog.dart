@@ -1,12 +1,14 @@
 import 'dart:convert';
 
 class CatalogModel {
+  // static List<Item> items;
+
   static List<Item> items = [
     Item(
         id: 1,
         name: "samsung mobile",
         desc: "samsung desc",
-        price: 999,
+        price: 9999,
         color: "#000",
         image:
             "https://m.media-amazon.com/images/I/7136zgtNmJL._AC_UY218_.jpg"),

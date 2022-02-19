@@ -13,10 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final int days = 100;
-
-  final String name = "tej";
-
   @override
   void initState() {
     super.initState();
@@ -24,6 +20,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
+    await Future.delayed(const Duration(seconds: 1));
     final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
     final decodeData = jsonDecode(catalogJson);
@@ -40,14 +37,51 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(title: const Text("NGR App")),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: ListView.builder(
-          itemCount: CatalogModel.items.length,
-          itemBuilder: (context, index) {
-            return ItemWidget(
-              item: CatalogModel.items[index],
-            );
-          },
-        ),
+        // ignore: unnecessary_null_comparison
+        child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+            ? GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 16,
+                    crossAxisSpacing: 16),
+                itemBuilder: (context, index) {
+                  final item = CatalogModel.items[index];
+                  return Card(
+                    clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    child: GridTile(
+                      header: Container(
+                        child: Text(
+                          item.name,
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                        padding: const EdgeInsets.all(12),
+                        decoration: const BoxDecoration(
+                          color: Colors.green,
+                        ),
+                      ),
+                      child: Image.network(
+                        item.image,
+                      ),
+                      footer: Container(
+                        child: Text(
+                          item.price.toString(),
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                        padding: const EdgeInsets.all(12),
+                        decoration: const BoxDecoration(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  );
+                },
+                itemCount: CatalogModel.items.length,
+              )
+            : const Center(
+                child: CircularProgressIndicator(),
+              ),
       ),
       drawer: const MyDrawer(),
     );
